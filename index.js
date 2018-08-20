@@ -1,10 +1,12 @@
 function produceDrivingRange(blockRange){
   return function(trip,two){
-    let me = (parseInt(trip) + parseInt(blockRange)) - parseInt(two);
-     if(me > 0){
-       return `${me} blocks out of range`;
+    let me = parseInt(trip) + parseInt(blockRange);
+    let u = parseInt(two);
+    let us = me -u;
+     if(us > 0){
+       return `${us} blocks out of range`;
      }else{
-       return `within range by ${me}`;
+       return `within range by ${us}`;
      }
   }
 }
