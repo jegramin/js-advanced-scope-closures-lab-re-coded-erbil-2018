@@ -5,9 +5,9 @@ function produceDrivingRange(blockRange){
     let us = me -u;
     
      if(me > u){
-       return `within range by ${u-me}`;
+       return `within range by ${me-u}`;
      }else{
-       return `${me-u} blocks out of range`;
+       return `${u-me} blocks out of range`;
      }
   }
 }
