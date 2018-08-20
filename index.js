@@ -1,5 +1,6 @@
 function produceDrivingRange(blockRange){
   return function(trip){
-    return `${blockRange - trip} blocks out of range`;
+    let me = blockRange - trip;
+    return `${me} blocks out of range`;
   }
 }
