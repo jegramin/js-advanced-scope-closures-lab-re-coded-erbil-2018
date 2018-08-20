@@ -4,9 +4,9 @@ function produceDrivingRange(blockRange){
     let u = parseInt(two);
     let us = u -me;
      if(me > u){
-       return `${us} blocks out of range`;
-     }else{
        return `within range by ${us}`;
+     }else{
+       return `${us} blocks out of range`;
      }
   }
 }
